@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="index.js"></script>
 </head>
 <body>
     <div>
@@ -21,15 +22,15 @@
                 <label for="username">Username</label>
                 <section class="userpass">
                     <i class="fa fa-user icon"></i>
-                    <input type="text" name="username" placeholder="Type Your Name">
+                    <input type="text" id="username" name="username" placeholder="Type Your Name">
                 </section>
-                <label for="password">Password</label>
+                <label for="pass">Password</label>
                 <section class="userpass">
                     <i class="fa fa-lock"></i>
-                    <input type="password" name="password" placeholder="Type Your Password">
+                    <input type="password" id="pass" name="pass" placeholder="Type Your Password" autocomplete="additional-name">
                 </section>
                 <a href="">Forget Password?</a>
-                <button type="submit">Login<i class="fa fa-sign-in"></i></button>
+                <button type="submit" onclick="checkdetails()">Login<i class="fa fa-sign-in"></i></button>
             </form>
             <section>
                 <p> Or Sign Up Using</p>
